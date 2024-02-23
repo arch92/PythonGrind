@@ -16,10 +16,10 @@ class Graph:
     def print_graph(self):
         
         for i in range(self.vertices):
-            print(" "+ i)
+            print(" "+ str(i))
             temp = self.array[i].get_head()
             while temp is not None:
-                print("["+temp.data+"]")
+                print("["+str(temp.data)+"]")
                 temp = temp.next_element
             print("None")
                 
